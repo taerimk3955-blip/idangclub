@@ -1,0 +1,643 @@
+
+
+#wrap{
+    width:100%;
+}
+
+/* top */
+
+.top_banner{
+    width:100%;
+    height:42px;
+
+    background:
+    linear-gradient(to right,
+    #ffdcea,
+    #fff1f7,
+    #ffdcea);
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    color:#fff;
+
+    letter-spacing:4px;
+
+    font-size:13px;
+}
+
+/* header */
+
+header{
+    width:100%;
+    height:120px;
+
+    background:rgba(255,255,255,.7);
+
+    backdrop-filter:blur(18px);
+
+    border-bottom:1px solid #f7dbe7;
+
+    position:sticky;
+    top:0;
+
+    z-index:999;
+}
+
+.header_inner{
+    width:1400px;
+    height:100%;
+
+    margin:0 auto;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+/* logo */
+
+.logo h1{
+    font-size:62px;
+
+    font-family:'Great Vibes', cursive;
+
+    color:#f1a7c9;
+
+    text-shadow:
+    0 0 18px rgba(255,255,255,.9);
+}
+
+.logo span{
+    display:block;
+
+    margin-top:8px;
+
+    font-size:11px;
+
+    letter-spacing:5px;
+
+    color:#cda6ba;
+}
+
+/* nav */
+
+.main_menu{
+    display:flex;
+    gap:55px;
+}
+
+.main_menu > li{
+    position:relative;
+
+    color:#ed9fc0;
+
+    font-size:15px;
+
+    transition:.3s;
+}
+
+.main_menu > li:hover{
+    transform:translateY(-3px);
+}
+
+.main_menu > li > a{
+    display:block;
+
+    padding:12px 0;
+}
+
+/* submenu */
+
+.sub_menu{
+    width:180px;
+
+    padding:18px 0;
+
+    border-radius:24px;
+
+    background:rgba(255,255,255,.95);
+
+    position:absolute;
+
+    top:55px;
+    left:50%;
+
+    transform:translateX(-50%);
+
+    opacity:0;
+    visibility:hidden;
+
+    transition:.35s;
+
+    box-shadow:
+    0 10px 25px rgba(255,214,230,.45);
+
+    border:1px solid #ffe1ec;
+}
+
+.main_menu li:hover .sub_menu{
+    opacity:1;
+    visibility:visible;
+}
+
+.sub_menu li{
+    text-align:center;
+
+    padding:12px 0;
+
+    color:#d89ab6;
+
+    transition:.3s;
+}
+
+.sub_menu li:hover{
+    background:#fff4f8;
+
+    color:#ef8fb7;
+}
+
+/* icon */
+
+.header_icon{
+    display:flex;
+    gap:18px;
+
+    font-size:22px;
+
+    color:#f1a9ca;
+}
+
+/* visual */
+
+
+.visual{
+    width:100%;
+    height:900px;
+
+    position:relative;
+
+    overflow:hidden;
+}
+
+.visual_inner{
+    width:100%;
+    height:100%;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+}
+
+.visual_inner span{
+    letter-spacing:5px;
+
+    color:#e8a8c5;
+}
+
+.visual_inner h2{
+    margin-top:30px;
+
+    font-size:150px;
+
+    line-height:.82;
+
+    font-family:'Great Vibes', cursive;
+
+    color:#fff;
+
+    text-shadow:
+    0 0 25px rgba(255,225,238,.95);
+}
+
+.visual_inner p{
+    margin-top:25px;
+
+    color:#d0a4b8;
+
+    font-size:22px;
+
+    letter-spacing:2px;
+}
+
+.visual_btn{
+    width:290px;
+    height:74px;
+
+    border-radius:999px;
+
+    margin-top:45px;
+
+    background:
+    linear-gradient(to bottom,
+    #ffe2ef,
+    #f4bdd6);
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    color:#fff;
+
+    font-weight:600;
+
+    box-shadow:
+    0 12px 25px rgba(255,214,230,.55);
+
+    transition:.35s;
+}
+
+.visual_btn:hover{
+    transform:translateY(-6px);
+}
+
+/* ribbon */
+
+.visual_ribbon{
+    position:absolute;
+
+    width:230px;
+
+    opacity:.92;
+}
+
+.left_ribbon{
+    top:50px;
+    left:40px;
+}
+
+.right_ribbon{
+    right:40px;
+    bottom:80px;
+}
+
+
+.back{
+    background: url('../img/back.png') no-repeat center center fixed;
+}
+
+/* tab */
+
+.tab_section{
+    width:100%;
+
+    padding:40px 0 80px;
+    
+}
+
+.tab_wrap{
+    width:1200px;
+
+    margin:0 auto;
+
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:16px;
+}
+
+.tab{
+    padding:15px 30px;
+
+    border-radius:999px;
+
+    background:rgba(255,255,255,.78);
+
+    border:1px solid #ffe2ec;
+
+    color:#e69fbe;
+
+    backdrop-filter:blur(10px);
+
+    transition:.3s;
+
+    box-shadow:
+    0 6px 18px rgba(255,220,235,.35);
+}
+
+.tab:hover,
+.tab.active{
+    background:
+    linear-gradient(to bottom,
+    #ffe8f1,
+    #ffd7e7);
+
+    color:#fff;
+
+    transform:translateY(-4px);
+}
+
+/* collection */
+/* collection */
+
+.collection{
+    width:100%;
+
+    padding-bottom:120px;
+}
+
+/* 시즌 탭 하나만 보여주고 나머지는 숨김 */
+
+.season{
+    display:none;
+}
+
+.season.active{
+    display:block;
+
+    animation:fadeIn .5s ease;
+}
+
+/* ===== 에디토리얼 블록 시스템 ===== */
+/* 카드/그림자/둥근모서리 없이 이미지가 화면에 꽉 차게 붙는 매거진 스크롤형 레이아웃 */
+
+.eb-full,
+.eb-split,
+.eb-filmstrip{
+    width:1500px;
+
+    margin:0 auto;
+}
+
+.eb-full img{
+    display:block;
+
+    width:100%;
+    height:920px;
+
+    object-fit:cover;
+}
+
+.eb-full.eb-full-wide img{
+    height:440px;
+}
+
+/* 화면 안쪽으로 살짝 여백을 두고 떠 있는 인셋 이미지 (풀블리드와 대비되는 리듬) */
+
+.eb-inset{
+    width:900px;
+
+    margin:0 auto;
+}
+
+.eb-inset img{
+    display:block;
+
+    width:100%;
+    height:820px;
+
+    object-fit:cover;
+}
+
+.eb-inset.narrow{
+    width:640px;
+}
+
+/* 여백만 있는 구간 (리듬을 위한 공백) */
+
+.eb-gap{
+    width:100%;
+
+    height:120px;
+}
+
+.eb-gap.sm{ height:60px; }
+.eb-gap.md{ height:120px; }
+.eb-gap.lg{ height:200px; }
+.eb-gap.xl{ height:280px; }
+
+/* 불균등 2~3단 분할, 위쪽이 아닌 아래로 어긋나는 계단식(offset) 구조 */
+
+.eb-split{
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:30px;
+}
+
+.eb-split img{
+    display:block;
+
+    width:100%;
+
+    object-fit:cover;
+}
+
+.eb-col{
+    overflow:hidden;
+}
+
+.eb-col.offset-down{
+    margin-top:160px;
+}
+
+.eb-col.h-md img{ height:460px; }
+.eb-col.h-lg img{ height:680px; }
+.eb-col.h-xl img{ height:860px; }
+
+.eb-split.r-30-70 .eb-col:nth-child(1){ width:30%; }
+.eb-split.r-30-70 .eb-col:nth-child(2){ width:70%; }
+
+.eb-split.r-70-30 .eb-col:nth-child(1){ width:70%; }
+.eb-split.r-70-30 .eb-col:nth-child(2){ width:30%; }
+
+.eb-split.r-50-50 .eb-col{ width:50%; }
+
+.eb-split.r-40-60 .eb-col:nth-child(1){ width:40%; }
+.eb-split.r-40-60 .eb-col:nth-child(2){ width:60%; }
+
+.eb-split.r-60-40 .eb-col:nth-child(1){ width:60%; }
+.eb-split.r-60-40 .eb-col:nth-child(2){ width:40%; }
+
+.eb-split.r-33 .eb-col{ width:33.333%; }
+
+/* 세로로 쌓인 2장 + 옆에 큰 히어로 이미지 */
+
+.eb-col.eb-stack{
+    display:flex;
+    flex-direction:column;
+
+    gap:30px;
+}
+
+.eb-col.eb-stack img{
+    height:330px;
+}
+
+/* 좁은 필름스트립(작은 썸네일 여러 장) + 큰 세로 히어로 이미지 */
+
+.eb-filmstrip{
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:30px;
+}
+
+.eb-filmstrip .strip{
+    width:20%;
+
+    display:flex;
+    flex-direction:column;
+
+    gap:30px;
+}
+
+.eb-filmstrip .strip img{
+    display:block;
+
+    width:100%;
+    height:230px;
+
+    object-fit:cover;
+}
+
+.eb-filmstrip .hero{
+    width:80%;
+}
+
+.eb-filmstrip .hero img{
+    display:block;
+
+    width:100%;
+    height:960px;
+
+    object-fit:cover;
+}
+
+
+
+
+/* mood */
+
+.mood_section{
+    width:100%;
+
+    padding-bottom:180px;
+}
+
+.mood_inner{
+    width:1500px;
+
+    margin:0 auto;
+
+    padding:100px;
+
+    border-radius:60px;
+
+    background:rgba(255,255,255,.7);
+
+    backdrop-filter:blur(15px);
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    box-shadow:
+    0 10px 35px rgba(255,220,235,.4);
+}
+
+.mood_text span{
+    color:#e0a4bf;
+
+    letter-spacing:4px;
+}
+
+.mood_text h3{
+    margin-top:25px;
+
+    font-size:110px;
+
+    line-height:.85;
+
+    font-family:'Great Vibes', cursive;
+
+    color:#f0b2cf;
+}
+
+.mood_text p{
+    margin-top:30px;
+
+    line-height:2;
+
+    color:#b990a5;
+}
+
+.mood_img{
+    width:520px;
+    height:650px;
+
+    border-radius:40px;
+
+    overflow:hidden;
+
+    box-shadow:
+    0 10px 25px rgba(255,220,235,.5);
+}
+
+.mood_img img{
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+}
+
+/* footer */
+
+footer{
+    width:100%;
+
+    padding:140px 0;
+
+    background:
+    linear-gradient(to bottom,
+    rgba(255,228,239,.88),
+    rgba(247,196,220,.92));
+
+    text-align:center;
+
+    backdrop-filter:blur(10px);
+}
+
+.footer_ribbon{
+    width:500px;
+
+    margin:0 auto 40px;
+}
+
+footer h4{
+    font-size:78px;
+
+    color:#fff;
+
+    font-family:'Great Vibes', cursive;
+
+    text-shadow:
+    0 0 20px rgba(255,255,255,.8);
+}
+
+footer p{
+    margin-top:20px;
+
+    color:#fff;
+
+    line-height:1.8;
+
+    letter-spacing:2px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(18px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
